@@ -15,8 +15,8 @@ public class Animal {
     private LocalDate dataResgate;
     private StatusAdocao status;
 
-    public Animal(String id, String nome, String especie, String raca, int idade, String porte, String estadoSaude, LocalDate dataResgate, StatusAdocao status){
-        this.id = UUID.randomUUID().toString(); // Da um ID aleatório e converte para String
+    public Animal(String nome, String especie, String raca, int idade, String porte, String estadoSaude, LocalDate dataResgate, StatusAdocao status) {
+        this.id = UUID.randomUUID().toString();
         this.nome = nome;
         this.especie = especie;
         this.raca = raca;
