@@ -44,9 +44,9 @@ public class TelaLogin extends JFrame {
         btnCadastrar = new JButton("Cadastrar-se");
 
         btnEntrar.setBackground(new Color(46, 204, 113));
-        btnEntrar.setForeground(Color.WHITE);
+        btnEntrar.setForeground(Color.BLACK);
         btnCadastrar.setBackground(new Color(52, 73, 94));
-        btnCadastrar.setForeground(Color.WHITE);
+        btnCadastrar.setForeground(Color.BLACK);
 
         painelBotoes.add(btnEntrar);
         painelBotoes.add(btnCadastrar);
@@ -55,26 +55,10 @@ public class TelaLogin extends JFrame {
         add(painelForm, BorderLayout.CENTER);
         add(painelBotoes, BorderLayout.SOUTH);
 
-        // Chama a função responsavel pelas ações dos botões
-        configurarAcoes();
-    }
-
-    private void configurarAcoes(){
-        btnEntrar.addActionListener(new ActionListener() {
-            @Override 
-            public void actionPerformed(ActionEvent e){
-                // JOptionPane.showMessageDialog(null, "Acesso liberado!"); // Tenho que vêr melhor isso depois
-            }
-        });
-        btnCadastrar.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null, "Carregando...");
-            }
-        });
     }
 
     public JTextField getCampoEmail() { return campoEmail; }
     public JPasswordField getCampoSenha() { return campoSenha; }
     public JButton getBtnEntrar() { return btnEntrar; }
+    public JButton getBtnCadastrar() { return btnCadastrar; }
 }

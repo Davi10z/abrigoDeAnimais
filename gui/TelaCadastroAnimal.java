@@ -75,7 +75,7 @@ public class TelaCadastroAnimal extends JFrame {
         JButton btnCancelar = new JButton("Cancelar");
 
         btnSalvar.setBackground(new Color(46, 204, 113));
-        btnSalvar.setForeground(Color.WHITE);
+        btnSalvar.setForeground(Color.BLACK);
 
         btnSalvar.addActionListener(new ActionListener() {
             @Override

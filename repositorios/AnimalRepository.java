@@ -1,11 +1,9 @@
 package repositorios;
 
-// Importando classes e exceções
 import modelo.Animal;
 import modelo.StatusAdocao;
 import excecoes.RegraNegocioException;
 
-// Bibliotecas
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,7 +15,9 @@ public class AnimalRepository {
     }
 
     public void cadastrar(Animal animal){
-        animais.add(animal);
+        if(animal != null){
+            animais.add(animal);
+        }
     }
 
     public List<Animal> listarTodos(){

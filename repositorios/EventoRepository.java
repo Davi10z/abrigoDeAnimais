@@ -1,12 +1,10 @@
 package repositorios;
 
-// Classes
 import modelo.Evento;
 import modelo.Usuario;
 import modelo.Voluntario;
 import excecoes.RegraNegocioException;
 
-// Bibliotecas
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,6 +33,6 @@ public class EventoRepository {
                 return;
             }
         }
-        throw new RegraNegocioException("Evento não encontrado.")
+        throw new RegraNegocioException("Evento não encontrado.");
     }
 }

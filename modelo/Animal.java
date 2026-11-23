@@ -1,6 +1,5 @@
 package modelo;
 
-// Importando as bibliotecas LocalDate e UUID
 import java.time.LocalDate;
 import java.util.UUID;
 

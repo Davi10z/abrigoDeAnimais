@@ -23,4 +23,21 @@ public class UsuarioRepository {
         }
         return null; // Retorna nada.
     }
+
+    public List<Usuario> listarTodos() {
+        return usuarios;
+    }
+
+    public boolean emailExiste(String email) {
+        for (Usuario u : usuarios) {
+            if (u.getEmail().equalsIgnoreCase(email)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public void removerPorEmail(String email) {
+        usuarios.removeIf(u -> u.getEmail().equalsIgnoreCase(email));
+    }
 }
