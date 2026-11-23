@@ -46,7 +46,7 @@ O sistema utiliza menus dinâmicos que se adaptam automaticamente ao perfil aute
 
 ```text
 src/
-├── Main.java                 # Ponto de entrada, dados iniciais e ciclo de login/logout
+├── Main.java                 # Aplicativo
 ├── excecoes/
 │   └── RegraNegocioException.java
 ├── gui/
@@ -61,7 +61,7 @@ src/
 │   ├── TelaGerirUsuarios.java
 │   └── TelaRelatorios.java
 ├── modelo/
-│   ├── Usuario.java          # Classe abstrata (implements Notificavel)
+│   ├── Usuario.java          # Classe abstrata
 │   ├── Notificavel.java      # Interface
 │   ├── Administrador.java
 │   ├── Veterinario.java
